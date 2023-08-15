@@ -1,0 +1,51 @@
+.title {
+    display: flex;
+    width: 50%;
+}
+.headerBody{
+    display: flex;
+    width: 100%;
+    border-bottom: 0.5px solid black;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    overflow: hidden;
+}
+.headerImage {
+    width: 100px;
+    height: 85px;
+}
+
+.pharmacyHeading{
+    color: blue;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.headerNavList{
+    width: 50%;
+    margin-top: 27px;
+}
+.headerNavList > ul{
+    display: flex;
+    width: 50%;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.signUpModalContent > input {
+    width: 300px;
+    height: 30px;
+}
+.signUpModalContent{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.headerNavList{
+    display: flex;
+    column-gap: 30px;
+}
+.userProfileSection{
+    display: flex;
+    column-gap: 30px;
+    margin-top: 15px;
+}

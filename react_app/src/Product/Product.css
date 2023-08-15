@@ -1,0 +1,26 @@
+.productBody{
+    width: 300px;
+    height: 350px;
+}
+.productDetailSection > p {
+    font-size: 14px;
+
+}
+.productDetailSection > p > span {
+    font-weight: bold;
+
+}
+.countSection{
+    display: flex;
+    column-gap: 5px;
+}
+.countSection > textarea {
+    width: 20px;
+    resize: none;
+    height: 16px;
+}
+.addToCartBtn{
+    float: right;
+    margin-top: -21px;
+    margin-right: 100px;
+}

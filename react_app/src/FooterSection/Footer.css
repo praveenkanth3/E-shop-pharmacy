@@ -1,0 +1,25 @@
+.FooterContainer{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    border-top: 0.5px solid black;
+    background-color: #2f313c;
+    padding: 20px;
+}
+.companyLinks,.customerHelpLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: #818389;
+}
+.contactContainer > h2, .customerHelpContainer > h2, .companyContainer > h2{
+    color: azure;
+}
+.contactContainer > p {
+    color: #818389;
+}
+a{
+    color: #818389 ;
+    text-decoration: none;
+}
