@@ -4,7 +4,13 @@ import ReactDOM from 'react-dom/client';
 import userContext from '../UserContext';
 import { Modal, Input, notification } from 'antd';
 import { initialRegisteringValue } from '../Constants/pharmacy.constant';
+import cartIcon from './cart-shopping-solid.svg'
+import {
+    UserOutlined,
+    HomeFilled
+} from '@ant-design/icons';
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [api, contextHolder] = notification.useNotification();
@@ -77,8 +83,6 @@ const Header = () => {
                 placement: 'bottom',
             });
         }
-        console.log(registered)
-
     }
     return (
         <div className='headerBody'>
@@ -86,6 +90,7 @@ const Header = () => {
             <div className="title">
                 <img src='https://mpshahhosp.org/wp-content/uploads/2022/03/Delivery-PNG-HD-Image.png' className="headerImage" />
                 <h1 className='pharmacyHeading'>India Pharmacy</h1>
+                <Link to='/cart' ><img className='cartIcon' src={cartIcon} />My cart</Link>
             </div>
             <div className='headerNavList'>
                 <ul>
@@ -96,8 +101,8 @@ const Header = () => {
                     {Object.keys(user).length ===0 && (<li onClick={() => { setSigninModelVisible(true) }}>Sign in</li>)}
                 </ul>
                 {Object.keys(user).length !==0 && (<div className='userProfileSection'>
-                    <div>{user.address}</div>
-                    <div>{user.name}</div>
+                    <div><HomeFilled />{user.address}</div>
+                    <div><UserOutlined />{user.name}</div>
                 </div>)}
             </div>
             {isSignUpModelVisible && (<Modal

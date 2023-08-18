@@ -14,8 +14,8 @@
     display: flex;
     column-gap: 5px;
 }
-.countSection > textarea {
-    width: 20px;
+.countSection > input {
+    width: 40px;
     resize: none;
     height: 16px;
 }
@@ -23,4 +23,8 @@
     float: right;
     margin-top: -21px;
     margin-right: 100px;
+}
+.productImage{
+    width: 250px;
+    height: 180px;
 }

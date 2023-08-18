@@ -1,7 +1,15 @@
 .allProductsContainer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 80px;
     margin: auto;
     width: 1450px;
+}
+.searchBox{
+        height: 40px;
+        margin-top: 20px;
+}
+.productsHeadingContainer{
+    display: flex;
+    column-gap: 20px;
 }
